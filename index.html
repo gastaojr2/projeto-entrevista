@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <! -- Define a o navegador  que é documento html tipo. -->
+    <html lang="en">
+<! -- defini o idioma de um elemento. --> 
+<head>
+    <meta charset="UTF-8">
+    <! -- Codificação padrão formatação de texto. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <! -- Compatibilidade com navegadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <! -- Controle de navegação para outros dispositivos. -->
+    <link href="./assets/styles/custom.css" rel="stylesheet">
+    <! -- Linka um recurso externo -->
+    <title> Cadastro de Usuários</title>
+</head>
+
+<body>
+
+    <div class="header">
+    </div>
+
+    <div class="content">
+        <p> Por favor preencha os campos abaixo.</p>
+
+        
+
+        <form method="post">
+
+    <! -- trabalho o 100% da div content, criando outras divs -->
+            <div class="w-50">
+                <input type="text" name="nome" id="nome" placeholder="* Nome" required>
+            </div>
+            <div class="w-25">
+                <input type="text" name="cpf" id="cpf"  onblur="return verificarCPF(this.value)" placeholder="* CPF" required>
+            </div>
+            <div class="w-25">
+                <input type="text" name="rg" id="rg" placeholder="RG" >
+            </div>
+
+            <br />
+
+            <div class="w-10">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="Masculino" value="Masculino">
+            </div>
+            <div class="w-10">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="Feminino" value="Feminino">
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="w-25">
+                <input type="text" name="cep" id="cep" class="w-20" placeholder="CEP" >
+            </div>
+            <div class="w-25">
+                <input type="text" name="end" id="rua" class="w-50" placeholder="* Endereço" required>
+            </div>
+            <div class="w-25">
+                <input type="text" name="num" id="numero" class="w-20" placeholder="* Número" required>
+            </div>
+            <div class="w-25">
+                <input type="text" name="bairro" id="bairro" class="w-20" placeholder="Bairro" >
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="w-25">
+                <input type="text" name="cidade" id="cidade" class="w-25" placeholder="Cidade" >
+            </div>
+            <div class="w-25">
+                <input type="text" name="estado" id="uf" class="w-25" placeholder="Estado" >
+            </div>
+            <div class="w-25">
+                <input type="text" name="telefone" class="w-25" placeholder="Telefone Fixo (Com DDD)" >
+            </div>
+            <div class="w-25">
+                <input type="text" name="celular" class="w-25" placeholder="* Celular (Com DDD)" required>
+            </div>
+
+            <div class="separador"></div>
+
+            <button type="submit">Enviar dados</button>
+            <div class="separador"></div>
+        </form>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="content">
+            <h1>
+                Por favor confirme seus dados, após verificação click no link enviar. 
+            </h1>
+
+            <br />
+            <p>
+                Nome: <span id="dataNome"></span> <br />
+                CPF: <span id="dataCpf"></span> <br />
+                RG: <span id="dataRg"></span> <br />
+		Sexo: <span id="dataSexo"></span> <br />
+            </p>
+
+            <p>
+                CEP: <span id="dataCep"></span> <br />
+                Endereço: <span id="dataEndereco"></span> <br />
+                Número: <span id="dataNumero"></span> <br />
+                Bairro: <span id="dataBairro"></span> <br />
+            </p>
+
+            <p>
+                Cidade: <span id="dataCidade"></span> <br />
+                Estado: <span id="dataEstado"></span> <br />
+                Telefone: <span id="dataTelefone"></span> <br />
+                Celular: <span id="dataCelular"></span> <br />
+            </p>
+
+            <br/>
+            <br/>
+            <a href="index.html">Enviar</a>
+            </h1>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Projeto Itaú Formação Edição</p>
+        <img src="./assets/images/itau.png" alt="Logo Itaú">
+        <img src="./assets/images/gama.png" alt="Logo Gama">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script src="assets/js/funcoes_cpf.js"></script>
+      <script src="assets/js/custom.js"></script>
+    <script src="assets/js/viacep.js"></script>
+
+</body>
+
+</html>
