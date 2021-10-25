@@ -1,66 +1,34 @@
 <!DOCTYPE html>
-    <! -- Define a o navegador  que é documento html tipo. -->
+    <!-- Define a o navegador  que é documento html tipo. -->
     <html lang="en">
-<! -- defini o idioma de um elemento. --> 
+    <!-- defini o idioma de um elemento. --> 
 <head>
     <meta charset="UTF-8">
-    <! -- Codificação padrão formatação de texto. -->
+    <!-- Codificação padrão formatação de texto. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <! -- Compatibilidade com navegadores. -->
+    <!-- Compatibilidade com navegadores. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <! -- Controle de navegação para outros dispositivos. -->
+    <!-- Controle de navegação para outros dispositivos. -->
     <link href="./assets/styles/custom.css" rel="stylesheet">
-    <! -- Linka um recurso externo -->
+    <!-- Linka um recurso externo -->
     <title> Cadastro de Usuários</title>
 </head>
 
 <body>
 
     <div class="header">
-Gráfico Descrição da imagem: Pessoa do sexo feminino, de cabelo curto, usa óculos, com blusa de frio, de feição sorridente segurando um tablet. 
-
+        Gráfico Descrição da imagem: Pessoa do sexo feminino, de cabelo curto, usa óculos, com blusa de frio, de feição sorridente segurando um tablet. 
     </div>
 
     <div class="content">
         <h1>
-<script
->
-//script de saudação.  
-d = new Date();
-hour = d.getHours();
-if(hour < 5)
-{
-   document.write("Boa Noite!");
-}
-else
-if(hour < 8)
-{
-   document.write("Bom Dia!");
-}
-else
-if(hour < 12)
-{
-   document.write("Bom Dia!");
-}
-else
-if(hour < 18)
-{
-   document.write("Boa tarde!");
-}
-else
-{
-   document.write("Boa noite!");
-}
-</script>
-
-  Seja bem vindo a nossa Página de Cadastro.  </h1>
+            <span id="saudacao"></span> Seja bem vindo a nossa Página de Cadastro.  
+        </h1>
         <p> Por favor preencha os campos abaixo.</p>
 
         
-
         <form method="post">
-
-    <! -- trabalho o 100% da div content, criando outras divs -->
+            <!--trabalho o 100% da div content, criando outras divs -->
             <div class="w-50">
                 <input type="text" name="nome" id="nome" placeholder="* Nome" required>
             </div>
