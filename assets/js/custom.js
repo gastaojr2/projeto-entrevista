@@ -53,5 +53,31 @@ $(document).ready(function () {
         event.preventDefault(); 
     });
 
+    //script de saudação.  
+    d = new Date();
+    hour = d.getHours();
+    if(hour < 5)
+    {
+        $("#saudacao").html("Boa Noite!")
+    }
+    else
+    if(hour < 8)
+    {
+        $("#saudacao").html("Bom Dia!")
+    }
+    else
+    if(hour < 12)
+    {
+        $("#saudacao").html("Bom Dia!")
+    }
+    else
+    if(hour < 18)
+    {
+        $("#saudacao").html("Boa tarde!")
+    }
+    else
+    {
+        $("#saudacao").html("Boa noite!")
+    }
     
 });

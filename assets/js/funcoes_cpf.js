@@ -1,6 +1,6 @@
  
 //arquivo funcoes_cpf.js
-// validador CPF
+//validador CPF
 function verificarCPF(c){
     var i;
     s = c;
