@@ -53,31 +53,19 @@ $(document).ready(function () {
         event.preventDefault(); 
     });
 
-    //script de saudação.  
-    d = new Date();
-    hour = d.getHours();
-    if(hour < 5)
-    {
-        $("#saudacao").html("Boa Noite!")
-    }
-    else
-    if(hour < 8)
-    {
-        $("#saudacao").html("Bom Dia!")
-    }
-    else
-    if(hour < 12)
-    {
-        $("#saudacao").html("Bom Dia!")
-    }
-    else
-    if(hour < 18)
-    {
-        $("#saudacao").html("Boa tarde!")
-    }
-    else
-    {
-        $("#saudacao").html("Boa noite!")
-    }
-    
-});
+   		//script de saudação.  
+let hora = new Date();
+let horaAtual = hora.getHours();
+function saudacao() {
+	if(horaAtual < 5) {
+   return document.write("Boa Noite!");
+} else if(horaAtual < 8) {
+   return document.write("Bom Dia!");
+} else if(horaAtual < 12) {
+   return document.write("Bom Dia!");
+} else if(horaAtual < 18) {
+   return document.write("Boa tarde!");
+} else {
+   return document.write("Boa noite!");
+}
+}   
